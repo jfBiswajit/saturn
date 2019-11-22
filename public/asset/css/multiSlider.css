@@ -1,0 +1,79 @@
+#exampleSlider {
+  position: relative;
+}
+
+#exampleSlider .MS-content {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#exampleSlider .MS-content .item {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 209px;
+  background: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+#exampleSlider .MS-content .item:hover {
+  opacity: 0.8;
+}
+
+#exampleSlider .MS-content .item p {
+  font-weight: bold;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  font-style: italic;
+}
+
+#exampleSlider .MS-content .item img {
+  width: 100%;
+  height: 180px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  text-align: center;
+}
+
+#exampleSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  outline: 0;
+  top: 35px;
+}
+
+#exampleSlider .MS-controls button:hover {
+  cursor: pointer;
+}
+
+#exampleSlider .MS-controls .MS-left {
+  position: absolute;
+  left: 10px;
+  top: 89px;
+  background: var(--success);
+  color: var(--white);
+  padding: 1rem;
+  margin-left: -10px;
+  font-size: 1.2rem;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+#exampleSlider .MS-controls .MS-right {
+  position: absolute;
+  right: 10px;
+  top: 89px;
+  background: red;
+  padding: 1rem;
+  margin-right: -10px;
+  font-size: 1.2rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+  background: var(--success);
+  color: var(--white);
+}
+
+#exampleSlider .MS-controls .MS-right:hover,
+#exampleSlider .MS-controls .MS-left:hover {
+  background: var(--success-dark);
+}
