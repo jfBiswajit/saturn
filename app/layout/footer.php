@@ -51,17 +51,21 @@
   <p class="footer-text">All Rights Reserved @Saturn 2019</p>
 </footer>
 <script src="asset/js/jquery-2.2.4.min.js"></script>
-<script src="asset/js/bag.js"></script>
-<script src="asset/js/ratingSystem.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="asset/js/goToTop.js"></script>
-<script src="asset/js/multiSlider.min.js"></script>
-<script src="asset/js/initMultiSlider.js"></script>
-<script src="asset/js/jitSlider.js"></script>
+<script src="asset/js/bag.js"></script>
+<script src="asset/js/rating_system.js"></script>
+<script src="asset/js/go_to_top.js"></script>
+<script src="asset/js/multi_slider_min.js"></script>
+<script src="asset/js/main_slider.js"></script>
+<script src="asset/js/main.js"></script>
 <script>
   AOS.init();
+  $('#exampleSlider').multislider({
+    interval: 4000,
+    slideAll: true,
+    duration: 500
+  });
 </script>
-<script src="asset/js/main.js"></script>
 </body>
 
 </html>

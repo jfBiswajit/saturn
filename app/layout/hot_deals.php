@@ -9,7 +9,7 @@
     die("Connection failed: " . $conn->connect_error);
   }
 
-$sql = 'SELECT * FROM products WHERE rating >= 4 ORDER BY ID DESC LIMIT 10';
+$sql = 'SELECT * FROM products WHERE discount > 25 ORDER BY ID DESC LIMIT 10';
   $data = $conn->query($sql);
   
   if ($data->num_rows) {
@@ -37,7 +37,7 @@ $sql = 'SELECT * FROM products WHERE rating >= 4 ORDER BY ID DESC LIMIT 10';
       </div>
       <div class="rating">
         <button class="add-to-cart">Add To Cart</button>
-        <?php include '../app/layout/ratingSystem.php' ?>
+        <?php include '../app/layout/rating_system.php' ?>
       </div>
     </div>
   </div>

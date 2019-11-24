@@ -9,12 +9,12 @@
     die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = "SELECT * FROM products WHERE main_category = 'men' ORDER BY ID DESC LIMIT 5";
+  $sql = "SELECT * FROM products WHERE main_category = 'women' ORDER BY ID DESC LIMIT 5";
   $data = $conn->query($sql);
   
   if ($data->num_rows) {
     ?>
-<div class="section-body mt-4 d-flex" data-aos="fade-left">
+<div class="section-body mt-4 d-flex" data-aos="fade-right">
   <?php
       while ($row = $data->fetch_assoc()) {
     ?>
@@ -37,7 +37,7 @@
       </div>
       <div class="rating">
         <button class="add-to-cart">Add To Cart</button>
-        <?php include '../app/layout/ratingSystem.php' ?>
+        <?php include '../app/layout/rating_system.php' ?>
       </div>
     </div>
   </div>

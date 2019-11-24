@@ -5,15 +5,15 @@
     <?php include '../app/layout/navbar.php' ?>
   </nav>
   <div class="slider-container m-3">
-    <?php include '../app/layout/jitSlider.php' ?>
+    <?php include '../app/layout/main_slider.php' ?>
   </div>
-  <div class="offers">
-    <?php include '../app/layout/offersGallery.php' ?>
+  <div class="highlighted-product-left">
+    <?php include '../app/layout/highlighted_left.php' ?>
   </div>
 </section>
 
 <section id="highlighted-products">
-  <?php include_once '../app/layout/trandingGallery.php' ?>
+  <?php include_once '../app/layout/highlighted_products.php' ?>
 </section>
 
 <section id="latest-product" class="section-container">
@@ -22,7 +22,7 @@
     <p>The Most Recent Product's From Saturn</p>
   </div>
   <div class="section-body mt-4">
-    <?php include_once '../app/layout/multiSlider.php' ?>
+    <?php include_once '../app/layout/multi_slider.php' ?>
   </div>
 </section>
 
@@ -31,7 +31,7 @@
     <h1>FLASH SALE</h1>
     <p>Flash Sale Going On</p>
   </div>
-  <?php include_once '../app/layout/hotDealsGallery.php' ?>
+  <?php include_once '../app/layout/flash_sale.php' ?>
 </section>
 
 <section id="top-selection" class="section-container">
@@ -39,15 +39,15 @@
     <h1>Top Selection</h1>
     <p>Most Popular On Saturn</p>
   </div>
-  <?php include_once '../app/layout/bestSealingGallery.php' ?>
+  <?php include_once '../app/layout/top_selection.php' ?>
 </section>
 
 <section id="Featured-categories" class="section-container">
   <div class="section-title">
-    <h1>TOP CATEGORIES</h1>
+    <h1>FEATURED CATEGORIES</h1>
     <p>Most Popular Categories</p>
   </div>
-  <?php include_once '../app/layout/topCategories.php' ?>
+  <?php include_once '../app/layout/featured_categories.php' ?>
 </section>
 
 <section id="recomended-product" class="section-container">
@@ -56,11 +56,8 @@
       <h1>RECOMMENDED</h1>
       <p>Recomended Products by Saturn</p>
     </div>
-    <div class="right">
-      <!-- <a href="#" class="more-btn">MORE</a> -->
-    </div>
   </div>
-  <?php include_once '../app/layout/recomendedBySaturn.php' ?>
+  <?php include_once '../app/layout/recomended.php' ?>
 </section>
 
 <section id="seasonal-product" class="section-container">
@@ -68,7 +65,7 @@
     <h1>GET READY FOR WINTER</h1>
     <p>Get Warmer With Saturn</p>
   </div>
-  <?php include_once '../app/layout/offeredBySaturnGallery.php' ?>
+  <?php include_once '../app/layout/layout/seasonal_product.php' ?>
 </section>
 
 <section id="discover-for-him" class="section-container">
@@ -81,7 +78,7 @@
       <a href="http://localhost/DEV/shop/mens.php" class="more-btn">MORE</a>
     </div>
   </div>
-  <?php include_once '../app/layout/discoverForHimGallery.php' ?>
+  <?php include_once '../app/layout/him.php' ?>
 </section>
 
 <section id="discover-for-her" class="section-container">
@@ -94,7 +91,7 @@
       <a href="http://localhost/DEV/shop/womens.php" class="more-btn">MORE</a>
     </div>
   </div>
-  <?php include_once '../app/layout/discoverForHer.php' ?>
+  <?php include_once '../app/layout/her.php' ?>
 </section>
 
 <section id="hot-deals" class="section-container mb-5">
@@ -103,12 +100,10 @@
       <h1>HOT DEAL'S</h1>
       <p>Find Product's With Maximum Discount</p>
     </div>
-    <div class="right">
-      <!-- <a href="#" class="more-btn">MORE</a> -->
-    </div>
   </div>
-  <?php include_once '../app/layout/hotdeals.php' ?>
+  <?php include_once '../app/layout/hot_deals.php' ?>
 </section>
+
 <!-- Shopping bag icon -->
 <div class="bag">
   <div class="top">
@@ -131,11 +126,12 @@
 </div>
 <!-- Loader -->
 <div id="loader">
-        <div class="lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+  <div class="lds-ring">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
 <?php include_once '../app/layout/footer.php' ?>

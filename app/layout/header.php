@@ -12,11 +12,6 @@
   <!-- INTERNEL ASSET -->
   <link rel="shortcut icon" href="asset/img/favicon/favicon.png" type="image/x-icon">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="asset/css/goToTop.css">
-  <link rel="stylesheet" href="asset/css/multiSlider.css">
-  <link rel="stylesheet" href="asset/css/jitSlider.css">
-  <link rel="stylesheet" href="asset/css/utility.css">
-  <link rel="stylesheet" href="asset/css/cart.css">
   <link rel="stylesheet" href="asset/css/main.css">
   <title>Saturn-Online Shopping In Bangladesh</title>
 </head>
