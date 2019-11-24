@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Italianno|Kaushan+Script|Open+Sans:400,400i,600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cf2302adf2.js"></script>
   <!-- INTERNEL ASSET -->
-  <base href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . '/DEV/'; ?>">
   <link rel="shortcut icon" href="asset/img/favicon/favicon.png" type="image/x-icon">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="asset/css/goToTop.css">
@@ -19,7 +18,7 @@
   <link rel="stylesheet" href="asset/css/utility.css">
   <link rel="stylesheet" href="asset/css/cart.css">
   <link rel="stylesheet" href="asset/css/main.css">
-  <title>SATURN</title>
+  <title>Saturn-Online Shopping In Bangladesh</title>
 </head>
 
 <body>

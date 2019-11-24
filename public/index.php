@@ -12,7 +12,7 @@
   </div>
 </section>
 
-<section id="tranding-product">
+<section id="highlighted-products">
   <?php include_once '../app/layout/trandingGallery.php' ?>
 </section>
 
@@ -26,31 +26,31 @@
   </div>
 </section>
 
-<section id="hot-deals" class="section-container">
+<section id="flash-sale" class="section-container">
   <div class="section-title">
-    <h1>LATEST</h1>
-    <p>Most Recent Product's On Saturn</p>
+    <h1>FLASH SALE</h1>
+    <p>Flash Sale Going On</p>
   </div>
   <?php include_once '../app/layout/hotDealsGallery.php' ?>
 </section>
 
-<section id="best-sealing" class="section-container">
+<section id="top-selection" class="section-container">
   <div class="section-title">
-    <h1>Most Trending</h1>
+    <h1>Top Selection</h1>
     <p>Most Popular On Saturn</p>
   </div>
   <?php include_once '../app/layout/bestSealingGallery.php' ?>
 </section>
 
-<section id="top-categories" class="section-container">
+<section id="Featured-categories" class="section-container">
   <div class="section-title">
     <h1>TOP CATEGORIES</h1>
-    <p>Most Popular Categories Around Saturn</p>
+    <p>Most Popular Categories</p>
   </div>
   <?php include_once '../app/layout/topCategories.php' ?>
 </section>
 
-<section id="discover-for-her" class="section-container">
+<section id="recomended-product" class="section-container">
   <div class="section-title more-btn-container">
     <div class="left">
       <h1>RECOMMENDED</h1>
@@ -63,10 +63,10 @@
   <?php include_once '../app/layout/recomendedBySaturn.php' ?>
 </section>
 
-<section id="recomended-products" class="section-container">
+<section id="seasonal-product" class="section-container">
   <div class="section-title">
     <h1>GET READY FOR WINTER</h1>
-    <p>Our New Winter Collection Is Here</p>
+    <p>Get Warmer With Saturn</p>
   </div>
   <?php include_once '../app/layout/offeredBySaturnGallery.php' ?>
 </section>
@@ -97,7 +97,7 @@
   <?php include_once '../app/layout/discoverForHer.php' ?>
 </section>
 
-<section id="discover-for-her" class="section-container mb-5">
+<section id="hot-deals" class="section-container mb-5">
   <div class="section-title more-btn-container">
     <div class="left">
       <h1>HOT DEAL'S</h1>
