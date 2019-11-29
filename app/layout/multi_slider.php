@@ -1,18 +1,10 @@
 <?php 
-  $server = "localhost";
-  $user = 'root';
-  $pass = 'toor'; 
-  $db = 'saturn';
-
-  $conn = new mysqli($server, $user, $pass, $db);
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
+  require_once $_SERVER["DOCUMENT_ROOT"] . '/app/config/db_config.php';
 
   $sql = 'SELECT * FROM products ORDER BY ID DESC LIMIT 10';
-
   $data = $conn->query($sql);
 ?>
+
 <div id="exampleSlider" data-aos="fade-right">
   <div class="MS-content">
     <?php
@@ -28,6 +20,7 @@
         <?php
       }
     }
+    $conn->close();
     ?>
   </div>
   <div class="MS-controls">

@@ -8,11 +8,10 @@
   <script src="https://kit.fontawesome.com/cf2302adf2.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cf2302adf2.js"></script>
-  <link rel="shortcut icon" href="asset/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="asset/saturn_fav.png" type="image/x-icon">
   <link rel="stylesheet" href="asset/style.css">
   <title>Admin Panel</title>
 </head>
-
 <body>
   <header class="container">
     <a href="index.php">

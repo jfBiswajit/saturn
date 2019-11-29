@@ -1,9 +1,16 @@
-<?php include_once '../../app/layout/header.php' ?>
-  <?php
+<?php
+  if(!isset($_SERVER['HTTP_REFERER'])){
+    header('location: /');
+    exit;
+  }
+    include_once $_SERVER["DOCUMENT_ROOT"] . '/app/layout/header.php';
+    require $_SERVER["DOCUMENT_ROOT"] . '/app/config/db_config.php';
+
     if (!isset($_SESSION['email'])) {
-      header('location: http://localhost/DEV/public/shop/user_login.php');
+      header('location: user_login.php');
     }
   ?>
+  
   <?php
     if (isset($_SESSION['productID'])) {
       ?>
@@ -23,16 +30,6 @@
             $productIDs = $_SESSION['productID'];
             $email = $_SESSION['email'];
             $updatePrice = 0;
-            $servername = "localhost";
-            $username = "root";
-            $password = "toor";
-            $dbname = "saturn";
-
-            $conn = new mysqli($servername, $username, $password, $dbname);
-
-            if ($conn->connect_error) {
-              die("Connection failed: " . $conn->connect_error);
-            }
             $getID = "SELECT id FROM users WHERE email = '$email'";
             $id = $conn->query($getID);
             $id = $id->fetch_assoc();
@@ -55,15 +52,7 @@
                   <?php
                 }
               }
-              // $insertUserData = "INSERT INTO orders (user_id, product_id, price, order_status, ispaid) VALUES ('$email', '$val', '500', 'pending', 'no')";
-
-              // $conn->query($insertUserData);
             }
-            // foreach ($productIDs as $item) {
-            // //   $insertUserData = "INSERT INTO orders (product_id, price, order_status, ispaid, customer_id) VALUES ( '$item', $currentAmount, 'pending', 'no', $id)";
-            // // $conn->query($insertUserData);
-            // // var_dump($conn->query($insertUserData));
-            // }
             unset($_SESSION['productID']);
           ?>
         </tbody>
@@ -75,10 +64,10 @@
         </tfoot>
       </table>
     </div>
-      <a href="http://localhost/DEV/shop/pay.php?amount=<?php echo $updatePrice ?>&email=<?php echo $email?>&id=<?php echo $id ?>" class='pay-btn'>Pay Now</a>
+      <a href="shop/pay.php?amount=<?php echo $updatePrice ?>&email=<?php echo $email?>&id=<?php echo $id ?>" class='pay-btn'>Pay Now</a>
     <?php
     } else {
-      header('location: http://localhost/DEV/');
+      header('location: /');
     }
+    include_once $_SERVER["DOCUMENT_ROOT"] . '/app/layout/footer.php';
   ?>
-<?php include_once '../../app/layout/footer.php' ?>

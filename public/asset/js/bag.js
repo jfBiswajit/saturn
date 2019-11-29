@@ -77,7 +77,7 @@ function cart() {
       let xhr = new XMLHttpRequest();
       xhr.open(
         'GET',
-        `public/shop/addToSession.php?productID=${productID}&sl=A${sl}`
+        `shop/add_to_session.php?productID=${productID}&sl=A${sl}`
       );
       xhr.send();
     }

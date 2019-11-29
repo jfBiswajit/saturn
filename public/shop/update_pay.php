@@ -1,14 +1,6 @@
-<?php 
-  $server = "localhost";
-  $user = 'root';
-  $pass = 'toor';
-  $db = 'saturn';
-  $id = $_GET['id'];
-
-  $conn = new mysqli($server, $user, $pass, $db);
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
+<?php
+  require $_SERVER["DOCUMENT_ROOT"] . '/app/config/db_config.php';
+  $id = $_GET['id']; 
 
   $sql = "UPDATE orders SET ispaid = 'yes' WHERE customer_id = $id";
   $data = $conn->query($sql);

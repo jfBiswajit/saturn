@@ -1,12 +1,10 @@
-<?php 
-  $server = "localhost";
-  $user = 'root';
-  $pass = 'toor';
-  $db = 'saturn';
+<?php
+  include_once $_SERVER["DOCUMENT_ROOT"] . '/app/layout/header.php';
+  require $_SERVER["DOCUMENT_ROOT"] . '/app/config/db_config.php';
   $id = $_GET['proID'];
-  $conn = new mysqli($server, $user, $pass, $db);
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+
+  if (!isset($id)) {
+    header('location: /');
   }
 
   $sql = "SELECT * FROM products WHERE id = $id";
@@ -14,7 +12,7 @@
   
   $row = $data->fetch_assoc();
 ?> 
-<?php include_once '../../app/layout/header.php' ?>
+
 <div class="pro-details">
   <div class="pro-notification">Product Details</div>
   <div class="details-body">
@@ -23,7 +21,7 @@
         <img src="asset/products/<?php echo $row['id'] . '.jpg' ?>" alt="">
       </div>
       <div class="rating">
-        <?php include '../../app/layout/ratingSystem.php' ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] . '/app/layout/rating_system.php' ?>
       </div>
     </div>
     <div class="pro-right">
@@ -61,4 +59,4 @@
     </div>
   </div>
 </div>
-<?php include_once '../../app/layout/footer.php' ?>
+<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/app/layout/footer.php' ?>

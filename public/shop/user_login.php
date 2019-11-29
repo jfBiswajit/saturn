@@ -1,12 +1,12 @@
-<?php include_once '../../app/layout/header.php' ?>
+<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/app/layout/header.php' ?>
 <?php
   if (isset($_SESSION['email'])) {
-    header('location: http://localhost/DEV/');
+    header('location: ./');
   } else {
     unset($_SESSION['productID']);
     ?>
 <div id="user-login">
-  <form action="shop/log_message.php">
+  <form action="shop/log_message.php"> 
     <div class="form-title">
       User Login
     </div>
@@ -24,7 +24,7 @@
       <div class="u-form-input">
         <input type="submit" value="SIGNUP">
       </div>
-      <a href="http://localhost/DEV/public/shop/user_reg.php">Create New Account.</a>
+      <a href="http://localhost/DEV/public/shop/user_reg.php">Create New One?</a>
     </div>
   </form>
 </div>
@@ -32,4 +32,4 @@
   }
 ?>
 
-<?php include_once '../../app/layout/footer.php' ?>
+<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/app/layout/footer.php' ?>

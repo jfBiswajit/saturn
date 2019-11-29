@@ -1,4 +1,10 @@
 <?php
+if(!isset($_SERVER['HTTP_REFERER'])){
+    header('location: /');
+    exit;
+}
+  require $_SERVER["DOCUMENT_ROOT"] . '/app/config/db_config.php';
+  
   $frist_name = $_GET['fname'];
   $last_name = $_GET['lname'];
   $email = $_GET['email'];
@@ -6,16 +12,6 @@
   $post = $_GET['post'];
   $full_address = $_GET['fulladdress'];
   $password = $_GET['password'];
-
-  $server = "localhost";
-  $user = 'root';
-  $pass = 'toor';
-  $db = 'saturn';
-
-  $conn = new mysqli($server, $user, $pass, $db);
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
 
   $sql = "SELECT * FROM users WHERE email = '$email'";
   $data = $conn->query($sql);

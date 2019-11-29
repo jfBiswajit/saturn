@@ -74,9 +74,9 @@
         </tbody>
     <tfoot>
       <tr>
-        <td>Total</td>
+        <td style="font-weight: bold">Total</td>
         <td colspan="6"></td>
-        <td><?php echo $totalPrice ?></td>
+        <td style="font-weight: bold"><?php echo $totalPrice ?></td>
       </tr>
     </tfoot>
   </table>
@@ -87,78 +87,4 @@
     echo "<h2 style='padding: 1rem; height: 524px'>No Pending Order</h2>";
   }
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="pending-order">
-  <div class="order-control-panel">
-    <div class="order-count">ORDER NO: 1</div>
-    <div class="update-status">
-      <select name="" id="">
-        <option>Pending</option>
-        <option value="Delivered">Delivered</option>
-      </select>
-    </div>
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Email</th>
-        <th>frist Name</th>
-        <th>City</th>
-        <th>Postal</th>
-        <th>Product ID</th>
-        <th>Quantity</th>
-        <th>price</th>
-        <th>isPaid</th>
-      </tr>
-    </thead>
-    <tbody>
-
-      <tr>
-        <td>jfbiswajit@gmail.com</td>
-        <td>Biswajit</td>
-        <td>Dhaka</td>
-        <td>1216</td>
-        <td>1230</td>
-        <td>1</td>
-        <td>2530</td>
-        <td>No</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td>Total</td>
-        <td colspan="6"></td>
-        <td>6000</td>
-      </tr>
-    </tfoot>
-  </table>
-</div> -->
 <?php include_once 'module/footer.php' ?>

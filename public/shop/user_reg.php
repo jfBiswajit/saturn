@@ -1,7 +1,9 @@
-<?php include_once '../../app/layout/header.php' ?>
 <?php
+  include_once $_SERVER["DOCUMENT_ROOT"] . '/app/layout/header.php';
+  require $_SERVER["DOCUMENT_ROOT"] . '/app/config/db_config.php';
+
   if (isset($_SESSION['email'])) {
-    header('location: ../../');
+    header('location: /');
   } else {
     ?>
 <div id="user-login">
@@ -50,12 +52,12 @@
       <div class="u-form-input">
         <input type="submit" value="SIGNUP" id="submit">
       </div>
-      <a href="http://localhost/DEV/public/shop/user_login.php">Already Have Account?</a>
+      <a href="shop/user_login.php">Already Have Account?</a>
     </div>
   </form>
 </div>
 <?php
   }
 ?>
-<script src="http://localhost/DEV/public/asset/js/validation.js"></script>
-<?php include_once '../../app/layout/footer.php' ?>
+<script src="asset/js/validation.js"></script>
+<?php include_once $_SERVER["DOCUMENT_ROOT"] . '/app/layout/footer.php'; ?>

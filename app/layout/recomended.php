@@ -1,23 +1,15 @@
 <?php 
-  $server = "localhost";
-  $user = 'root';
-  $pass = 'toor';
-  $db = 'saturn';
+  require $_SERVER["DOCUMENT_ROOT"] . '/app/config/db_config.php';
 
-  $conn = new mysqli($server, $user, $pass, $db);
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-
-$sql = 'SELECT * FROM products WHERE rating >= 4 ORDER BY ID DESC LIMIT 10';
+  $sql = 'SELECT * FROM products WHERE rating >= 4 ORDER BY ID ASC LIMIT 10';
   $data = $conn->query($sql);
-  
+
   if ($data->num_rows) {
-    ?>
-<div class="section-body mt-4 d-flex" data-aos="fade-left">
+?>
+  <div class="section-body mt-4 d-flex" data-aos="fade-left">
   <?php
-      while ($row = $data->fetch_assoc()) {
-    ?>
+    while ($row = $data->fetch_assoc()) {
+  ?>
 
   <div class="card item" data-productid="<?php echo $row['id'] ?>" data-producttitle="<?php echo $row['title'] ?>" data-sl="<?php echo $row['sl'] ?>" data-producttitle="<?php echo $row['title'] ?>">
     <a href="./shop/product_details.php?proID=<?php echo $row['id'] ?>">
@@ -37,15 +29,15 @@ $sql = 'SELECT * FROM products WHERE rating >= 4 ORDER BY ID DESC LIMIT 10';
       </div>
       <div class="rating">
         <button class="add-to-cart">Add To Cart</button>
-        <?php include '../app/layout/rating_system.php' ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"] . '/app/layout/rating_system.php' ?>
       </div>
     </div>
   </div>
   <?php
-      }
-     ?>
+  }
+  ?>
 </div>
 <?php
-  }
-  $conn->close();
+}
+$conn->close();
 ?>

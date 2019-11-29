@@ -34,10 +34,7 @@ function ratingSystem(e) {
     }
     // Ajax goes here
     let xhr = new XMLHttpRequest();
-    xhr.open(
-      'GET',
-      `http://localhost/DEV/shop/update-rating.php?proid=${proID}&rating=3`
-    );
+    xhr.open('GET', `shop/update_rating.php?proid=${proID}&rating=3`);
     xhr.addEventListener('load', function() {
       if (xhr.status == 200) {
         console.log(xhr.responseText);
@@ -55,10 +52,7 @@ function ratingSystem(e) {
     }
     // Ajax goes here
     let xhr = new XMLHttpRequest();
-    xhr.open(
-      'GET',
-      `http://localhost/DEV/shop/update-rating.php?proid=${proID}&rating=5`
-    );
+    xhr.open('GET', `shop/update_rating.php?proid=${proID}&rating=5`);
     xhr.addEventListener('load', function() {
       if (xhr.status == 200) {
       } else {
@@ -77,10 +71,7 @@ function ratingSystem(e) {
     }
     // Ajax goes here
     let xhr = new XMLHttpRequest();
-    xhr.open(
-      'GET',
-      `http://localhost/DEV/shop/update-rating.php?proid=${proID}&rating=1`
-    );
+    xhr.open('GET', `shop/update_rating.php?proid=${proID}&rating=1`);
     xhr.addEventListener('load', function() {
       if (xhr.status == 200) {
         console.log(xhr.responseText);
@@ -100,10 +91,7 @@ function ratingSystem(e) {
     }
     // Ajax goes here
     let xhr = new XMLHttpRequest();
-    xhr.open(
-      'GET',
-      `http://localhost/DEV/shop/update-rating.php?proid=${proID}&rating=2`
-    );
+    xhr.open('GET', `shop/update_rating.php?proid=${proID}&rating=2`);
     xhr.addEventListener('load', function() {
       if (xhr.status == 200) {
         console.log(xhr.responseText);
@@ -123,10 +111,7 @@ function ratingSystem(e) {
     }
     // Ajax goes here
     let xhr = new XMLHttpRequest();
-    xhr.open(
-      'GET',
-      `http://localhost/DEV/shop/update-rating.php?proid=${proID}&rating=4`
-    );
+    xhr.open('GET', `shop/update_rating.php?proid=${proID}&rating=4`);
     xhr.addEventListener('load', function() {
       if (xhr.status == 200) {
         console.log(xhr.responseText);

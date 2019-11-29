@@ -36,12 +36,12 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-men-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-men-thumbnail.png" alt="">
         </div>
       </div>
     </div>
   </li>
-  <li><a href="shop/womens.php?test=womens">Women's Fashion</a>
+  <li><a href="#">Women's Fashion</a>
     <div class="sub-menu">
       <div class="sub-menu-container">
         <div class="menu-1">
@@ -77,12 +77,12 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-women-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-women-thumbnail.png" alt="">
         </div>
       </div>
     </div>
   </li>
-  <li><a href="shop/kids.php?test=kids">Kids's Fashion</a>
+  <li><a href="#">Kids's Fashion</a>
     <div class="sub-menu">
       <div class="sub-menu-container">
         <div class="menu-1">
@@ -118,12 +118,12 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-kids-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-kids-thumbnail.png" alt="">
         </div>
       </div>
     </div>
   </li>
-  <li><a href="shop/beauty&health.php?test=mens">Beauty & Health</a>
+  <li><a href="#">Beauty & Health</a>
     <div class="sub-menu">
       <div class="sub-menu-container">
         <div class="menu-1">
@@ -159,12 +159,12 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-beauty-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-beauty-thumbnail.png" alt="">
         </div>
       </div>
     </div>
   </li>
-  <li><a href="shop/home&living.php?test=mens">Home & Living</a>
+  <li><a href="#">Home & Living</a>
     <div class="sub-menu">
       <div class="sub-menu-container">
         <div class="menu-1">
@@ -200,12 +200,12 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-home-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-home-thumbnail.png" alt="">
         </div>
       </div>
     </div>
   </li>
-  <li><a href="shop/accessories.php?test=mens">Accessories</a>
+  <li><a href="#">Accessories</a>
     <div class="sub-menu">
       <div class="sub-menu-container">
         <div class="menu-1">
@@ -241,12 +241,12 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-accessories-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-accessories-thumbnail.png" alt="">
         </div>
       </div>
     </div>
   </li>
-  <li><a href="shop/phones.php?test=mens">Phones</a>
+  <li><a href="#">Phones</a>
     <div class="sub-menu">
       <div class="sub-menu-container">
         <div class="menu-1">
@@ -282,12 +282,12 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-phone-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-phone-thumbnail.png" alt="">
         </div>
       </div>
     </div>
   </li>
-  <li><a href="shop/laptops.php?test=mens">Laptops</a>
+  <li><a href="#">Laptops</a>
     <div class="sub-menu">
       <div class="sub-menu-container">
         <div class="menu-1">
@@ -323,12 +323,12 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-laptop-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-laptop-thumbnail.png" alt="">
         </div>
       </div>
     </div>
   </li>
-  <li><a href="shop/camera.php?test=mens">Camera</a>
+  <li><a href="#">Camera</a>
     <div class="sub-menu">
       <div class="sub-menu-container">
         <div class="menu-1">
@@ -364,7 +364,7 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-camera-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-camera-thumbnail.png" alt="">
         </div>
       </div>
     </div>
@@ -405,7 +405,7 @@
           </ul>
         </div>
         <div class="menu-thumbnail">
-          <img src="asset/img/category-thumbnail/category-sports-thumbnail.png" alt="">
+          <img src="asset/img/category_thumbnail/category-sports-thumbnail.png" alt="">
         </div>
       </div>
     </div>

@@ -11,14 +11,14 @@
     </form>
   </div>
 </section>
-<hr>
+
 <footer id="main-footer">
   <div class="footer-body">
     <div class="item">
       <div class="body">
         <p class='title'>WE ACCEPT</p>
         <div class="payment-methods">
-          <a href="#"><img src="asset/img/payment-methods/paypal.png" alt=""></a>
+          <a href="#"><img src="asset/img/payment_methods/paypal.png" alt=""></a>
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@
         <div class="icons">
           <a href="#"><img src="asset/icons/facebook.svg" alt=""></a>
           <a href="#"><img src="asset/icons/instagram.svg" alt=""></a>
-          <a href="#"><img src="asset/icons/twitter-social-logotype.svg" alt=""></a>
+          <a href="#"><img src="asset/icons/twitter.svg" alt=""></a>
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@
       </div>
     </div>
   </div>
-  <hr>
+
   <p class="footer-text">All Rights Reserved @Saturn 2019</p>
 </footer>
 <script src="asset/js/jquery-2.2.4.min.js"></script>
