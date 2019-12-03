@@ -24,7 +24,7 @@
       <div class="u-form-input">
         <input type="submit" value="SIGNUP">
       </div>
-      <a href="http://localhost/DEV/public/shop/user_reg.php">Create New One?</a>
+      <a href="http://localhost/public/shop/user_reg.php">Create New One?</a>
     </div>
   </form>
 </div>
