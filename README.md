@@ -10,6 +10,7 @@ Saturn is a online e-commerce website who provides various kind of products to c
 - User Dashboard
 - Admin Panel
 - Form validation
+- Shopping cart
 
 ## Tecnology
 
