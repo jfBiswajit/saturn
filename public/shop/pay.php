@@ -31,15 +31,16 @@ if(!isset($_SERVER['HTTP_REFERER'])){
       onApprove: function(data, actions) {
         // This function captures the funds from the transaction.
         return actions.order.capture().then(function(details) {
-          console.log('paid');
           // This function shows a transaction success message to your buyer.
               let xhr = new XMLHttpRequest();
               xhr.open('GET', `shop/update_pay.php?id=${id}`);
               xhr.addEventListener('load', function() {
               if (xhr.status == 200) {
-                console.log(xhr.responseText);
+                body.innerHTML = `<div class="container" style="text-align: center; margin-top: 18%; color: green"><h4 style="margin: 0; padding:0.5rem 0">Successfully Paid!</h4><p style="margin: 0; padding:0">Thank you! for shopping with "Saturn"</p>
+                </div>`;
               } else {
-                console.log(xhr.responseText);
+                body.innerHTML = `<div class="container" style="text-align: center; margin-top: 18%; color: red"><h4 style="margin: 0; padding:0.5rem 0">Failed!</h4><p style="margin: 0; padding:0">Sorry! Payment failed.</p><p style="margin: 0; padding:0">Please try later.</p>
+                </div>`;
               }
             });
             xhr.send();
