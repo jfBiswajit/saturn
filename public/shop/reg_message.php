@@ -18,13 +18,13 @@ if(!isset($_SERVER['HTTP_REFERER'])){
 
   if ($data->num_rows) {
     echo "<h3>Existing Account!</h3>";
-    echo '<a href="http://localhost/DEV/public/shop/user_login.php">Click Here To Login</a>';
+    echo '<a href="http://localhost/shop/user_login.php">Click Here To Login</a>';
   } else {
       $insertUserData = "INSERT INTO users (frist_name, last_name, email, city, post, full_address, password) VALUES ('$frist_name', '$last_name', '$email', '$city', '$post', '$full_address', '$password')";
 
       if ($conn->query($insertUserData)) {
         echo "<h3>Successfully Register!</h3>";
-        echo '<a href="http://localhost/DEV/public/shop/user_login.php">Click Here To Login</a>';
+        echo '<a href="http://localhost/shop/user_login.php">Click Here To Login</a>';
       } else {
         echo "<h3>Sorry! Something Went Wrong Please Try Later.</h3>";
       }
