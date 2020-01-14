@@ -57,6 +57,7 @@ email.addEventListener('blur', function(e) {
       Lemail.classList.add('form-text-red');
     }
   } else {
+    
     email.classList.add('form-danger');
     email.innerHTML = 'Email (Required)';
     Lemail.classList.add('form-text-red');
