@@ -1,6 +1,6 @@
 # Saturn
 
-Saturn is an online e-commerce website who provides various kind of products to customers.
+Saturn is an online e-commerce website thats provides various kind of products to customers.
 
 ## Key Features
 
